@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/rollup-umd/documentation-cli/compare/v1.0.5...v1.0.6) (2018-11-14)
+
+
+### Bug Fixes
+
+* **cmds:** fix copy and intl ([2c1ff12](https://github.com/rollup-umd/documentation-cli/commit/2c1ff12))
+
 ## [1.0.5](https://github.com/rollup-umd/documentation-cli/compare/v1.0.4...v1.0.5) (2018-11-14)
 
 
