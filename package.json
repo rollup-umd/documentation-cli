@@ -1,6 +1,6 @@
 {
   "name": "@yeutech/documentation-cli",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "the adaptive module boilerplate",
   "bin": "lib/cli/index.js",
   "homepage": "https://rollup-umd.yeutech.com/documentation-cli",
@@ -28,7 +28,8 @@
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "postinstall": "node -e \"console.log('\\u001b[31m@yeutech/documentation-cli is deprecated, use @rollup-umd/documentation-cli instead.')\" || exit 0"
   },
   "repository": {
     "type": "git",
