@@ -2,7 +2,7 @@
 const path = require('path');
 const fs = require('fs');
 const async = require('async');
-const { spawn, exec } = require('../utils');
+const { spawn, exec, sedReplace } = require('../utils');
 
 const emptyLink = (pkg, lang, isPrivate) => isPrivate ? `*empty* ([edit now](${pkg.bugs.url.split('/issues')[0]}/edit/dev/translate/${lang}.json))` : `*empty*`;
 require('shelljs/global');
