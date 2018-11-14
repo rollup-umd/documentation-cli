@@ -1,6 +1,6 @@
 {
   "name": "@rollup-umd/documentation-cli",
-  "version": "0.0.0-development",
+  "version": "1.0.1",
   "description": "the adaptive module boilerplate",
   "bin": "lib/cli/index.js",
   "homepage": "https://rollup-umd.github.io/documentation-cli",
