@@ -44,15 +44,15 @@ exports.handler = (argv) => {
   start += `\`\`\`js static
 import englishMessages from '$PACKAGE_NAME/translate/en.json';
 \`\`\``;
-  start += `\n\n> Locales can be configured within your \`package.json\` under \`translation\` or using \`npx ${thisPkg.name} intl install\` command.`;
+  start += `\n\n> Locales can be configured within your \`package.json\` under \`translation\` or using \`npx @rollup-umd/intl install\` command.`;
   start += '\n';
 
   async.auto({
-    runExtract: (cb) => spawn(`npx ${thisPkg.name} intl extract`, cb),
-    isPrivate: (cb) => spawn(`npx ${thisPkg.name} publish status | tail -1`, cb),
-    setupCi: (cb) => exec(`grep -q "npx ${thisPkg.name} doc intl" ${gitlabCiPath} || echo true`, (err, res) => {
+    runExtract: (cb) => spawn(`npx @rollup-umd/intl extract`, cb),
+    isPrivate: (cb) => spawn(`npx rollup-umd-scripts publish status | tail -1`, cb),
+    setupCi: (cb) => exec(`grep -q "npx @rollup-umd/documentation-cli intl" ${gitlabCiPath} || echo true`, (err, res) => {
       if (res && res.indexOf('true') !== -1) {
-        sedReplace(gitlabCiPath, `# !Replace variables`, `# !Replace variables\n    - npx ${thisPkg.name} doc intl`, gitlabCiPath, cb);
+        sedReplace(gitlabCiPath, `# !Replace variables`, `# !Replace variables\n    - npx @rollup-umd/documentation-cli intl`, gitlabCiPath, cb);
         return;
       }
       cb();
