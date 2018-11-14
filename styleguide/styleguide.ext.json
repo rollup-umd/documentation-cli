@@ -21,6 +21,42 @@
       ]
     },
     {
+      "name": "CLI commands",
+      "content": "docs/cli/index.md",
+      "sections": [
+        {
+          "name": "add-section",
+          "content": "docs/cli/add-section.md",
+          "sections": []
+        },
+        {
+          "name": "copy",
+          "content": "docs/cli/copy.md",
+          "sections": []
+        },
+        {
+          "name": "ignore",
+          "content": "docs/cli/ignore.md",
+          "sections": []
+        },
+        {
+          "name": "intl",
+          "content": "docs/cli/intl.md",
+          "sections": []
+        },
+        {
+          "name": "ribbon",
+          "content": "docs/cli/ribbon.md",
+          "sections": []
+        },
+        {
+          "name": "variable",
+          "content": "docs/cli/variable.md",
+          "sections": []
+        }
+      ]
+    },
+    {
       "name": "FAQ",
       "content": "docs/faq.md"
     },

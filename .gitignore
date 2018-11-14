@@ -11,7 +11,6 @@ jest_0
 lib
 dist
 /public
-/docs/cli
 /docs/declinations
 /docs/translation.md
 .git-credentials
