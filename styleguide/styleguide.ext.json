@@ -11,20 +11,12 @@
       "content": "docs/introduction.md"
     },
     {
-      "name": "Prerequisite",
-      "content": "docs/prerequisite.md"
-    },
-    {
       "name": "Getting started",
       "content": "docs/getting-started.md",
       "sections": [
         {
           "name": "Installation",
           "content": "docs/installation.md"
-        },
-        {
-          "name": "Configuration",
-          "content": "docs/configuration.md"
         }
       ]
     },
@@ -41,14 +33,18 @@
           "content": "docs/commands.md"
         },
         {
-          "name": "Branches",
-          "content": "docs/branches.md"
-        },
-        {
           "name": "Release",
           "content": "docs/release.md"
         }
       ]
+    },
+    {
+      "name": "Code of conduct",
+      "content": "CODE_OF_CONDUCT.md"
+    },
+    {
+      "name": "Changelog",
+      "content": "CHANGELOG.md"
     }
   ],
   "ribbon": {
