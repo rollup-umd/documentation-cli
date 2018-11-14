@@ -11,20 +11,48 @@
       "content": "docs/introduction.md"
     },
     {
-      "name": "Prerequisite",
-      "content": "docs/prerequisite.md"
-    },
-    {
       "name": "Getting started",
       "content": "docs/getting-started.md",
       "sections": [
         {
           "name": "Installation",
           "content": "docs/installation.md"
+        }
+      ]
+    },
+    {
+      "name": "CLI commands",
+      "content": "docs/cli/index.md",
+      "sections": [
+        {
+          "name": "add-section",
+          "content": "docs/cli/add-section.md",
+          "sections": []
         },
         {
-          "name": "Configuration",
-          "content": "docs/configuration.md"
+          "name": "copy",
+          "content": "docs/cli/copy.md",
+          "sections": []
+        },
+        {
+          "name": "ignore",
+          "content": "docs/cli/ignore.md",
+          "sections": []
+        },
+        {
+          "name": "intl",
+          "content": "docs/cli/intl.md",
+          "sections": []
+        },
+        {
+          "name": "ribbon",
+          "content": "docs/cli/ribbon.md",
+          "sections": []
+        },
+        {
+          "name": "variable",
+          "content": "docs/cli/variable.md",
+          "sections": []
         }
       ]
     },
@@ -41,14 +69,18 @@
           "content": "docs/commands.md"
         },
         {
-          "name": "Branches",
-          "content": "docs/branches.md"
-        },
-        {
           "name": "Release",
           "content": "docs/release.md"
         }
       ]
+    },
+    {
+      "name": "Code of conduct",
+      "content": "CODE_OF_CONDUCT.md"
+    },
+    {
+      "name": "Changelog",
+      "content": "CHANGELOG.md"
     }
   ],
   "ribbon": {
