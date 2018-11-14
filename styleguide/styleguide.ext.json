@@ -84,7 +84,7 @@
     }
   ],
   "ribbon": {
-    "url": "https://module.kopaxgroup.com/rollup-umd/documentation-cli",
-    "text": "Fork us on GitLab"
+    "url": "https://github.com/rollup-umd/documentation-cli",
+    "text": "Fork us on GitHub"
   }
 }

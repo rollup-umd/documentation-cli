@@ -1,32 +1,37 @@
 # documentation-cli
 
-the adaptive module boilerplate.
+[![Build Status](https://travis-ci.org/@rollup-umd/documentation-cli.svg?branch=master)](https://travis-ci.org/@rollup-umd/documentation-cli) [![npm Version](https://img.shields.io/npm/v/@rollup-umd/documentation-cli.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli) [![License](https://img.shields.io/npm/l/@rollup-umd/documentation-cli.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli) [![NPM monthly downloads](https://img.shields.io/npm/dm/@rollup-umd/documentation-cli.svg?style=flat)](https://npmjs.org/package/@rollup-umd/documentation-cli) [![NPM total downloads](https://img.shields.io/npm/dt/@rollup-umd/documentation-cli.svg?style=flat)](https://npmjs.org/package/@rollup-umd/documentation-cli) [![npm Version](https://img.shields.io/node/v/@rollup-umd/documentation-cli.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli) [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.documentation-cli&metric=coverage)](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.documentation-cli&metric=coverage) [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.documentation-cli&metric=alert_status)](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.documentation-cli&metric=alert_status)
 
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
-**Master**
-
-[![build status](https://module.kopaxgroup.com/rollup-umd/documentation-cli/badges/master/build.svg)](https://module.kopaxgroup.com/rollup-umd/documentation-cli/commits/master)
-[![coverage report](https://module.kopaxgroup.com/rollup-umd/documentation-cli/badges/master/coverage.svg)](https://module.kopaxgroup.com/rollup-umd/documentation-cli/commits/master)
-
-**Dev**
-
-[![build status](https://module.kopaxgroup.com/rollup-umd/documentation-cli/badges/dev/build.svg)](https://module.kopaxgroup.com/rollup-umd/documentation-cli/commits/dev)
-[![coverage report](https://module.kopaxgroup.com/rollup-umd/documentation-cli/badges/dev/coverage.svg)](https://module.kopaxgroup.com/rollup-umd/documentation-cli/commits/dev)
+the adaptive module boilerplate
 
 
 ## Table of Contents
 
   - [Documentation](#documentation)
-  - [License](#license)
+  - [Contributing](#contributing)
+  - [License MIT](#license-mit)
 
 ---
-  
+
 ## Documentation
 
-  - View documentation-cli [HTML documentation](https://rollup-umd.yeutech.com/documentation-cli) *(require access)*
+Read [documentation-cli documentation](https://rollup-umd.github.io/documentation-cli).
 
-## License
 
-Copyright (c) 2018 Yeutech Company Limited. Made with love in Vietnam with [rollup-umd](https://module.kopaxgroup.com/dev-tools/rollup-umd/tags/v1.2.3) 1.2.3
+## Contributing
+
+If you want to contribute to documentation-cli please see our [contributing and community guidelines](https://github.com/rollup-umd/documentation-cli/blob/master/CONTRIBUTING.md), they\'ll help you get set up locally and explain the whole process.
+
+Please also note that all repositories under the rollup-umd organization follow our [Code of Conduct](https://github.com/rollup-umd/documentation-cli/blob/master/CODE_OF_CONDUCT.md), make sure to review and follow it.
+
+## License MIT
+
+Copyright 2018 Yeutech Company Limited
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+

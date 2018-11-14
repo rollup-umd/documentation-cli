@@ -1,9 +1,9 @@
 {
-  "name": "@yeutech/documentation-cli",
+  "name": "@rollup-umd/documentation-cli",
   "version": "1.0.0",
   "description": "the adaptive module boilerplate",
   "bin": "lib/cli/index.js",
-  "homepage": "https://rollup-umd.yeutech.com/documentation-cli",
+  "homepage": "https://rollup-umd.github.io/documentation-cli",
   "engines": {
     "node": ">=8"
   },
@@ -28,15 +28,14 @@
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "postinstall": "node -e \"console.log('\\u001b[31m@yeutech/documentation-cli is deprecated, use @rollup-umd/documentation-cli instead.')\" || exit 0"
+    "styleguide:build": "styleguidist build"
   },
   "repository": {
     "type": "git",
-    "url": "https://module.kopaxgroup.com/rollup-umd/documentation-cli.git"
+    "url": "https://github.com/rollup-umd/documentation-cli.git"
   },
   "bugs": {
-    "url": "https://module.kopaxgroup.com/rollup-umd/documentation-cli/issues"
+    "url": "https://github.com/rollup-umd/documentation-cli/issues"
   },
   "keywords": [
     "yeutech.vn",
@@ -153,17 +152,10 @@
   ],
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.0",
-    "@semantic-release/exec": "^2.3.0",
-    "@semantic-release/git": "^7.0.1",
-    "@semantic-release/gitlab": "^2.1.4",
+    "@semantic-release/git": "^7.0.5",
+    "@semantic-release/github": "^5.2.1",
     "@semantic-release/npm": "^4.0.2",
     "@yeutech-lab/rollup-umd-documentation": "^2.4.3",
-    "@yeutech/rollup-umd-ci-build": "^1.0.5",
-    "@yeutech/rollup-umd-ci-deploy": "^1.0.7",
-    "@yeutech/rollup-umd-ci-release": "^1.0.12",
-    "@yeutech/rollup-umd-ci-release-transitive": "^1.1.30",
-    "@yeutech/rollup-umd-ci-test": "^1.0.6",
-    "@yeutech/rollup-umd-scripts": "^0.16.19",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^22.4.1",
@@ -226,32 +218,20 @@
   },
   "peerDependencies": {},
   "publishConfig": {
-    "registry": "https://npm.kopaxgroup.com",
-    "tag": "latest"
+    "registry": "https://registry.npmjs.org",
+    "tag": "latest",
+    "access": "public"
   },
   "release": {
     "branch": "master",
-    "success": false,
-    "fail": false,
     "npmPublish": true,
     "verifyConditions": [
-      {
-        "path": "@semantic-release/exec",
-        "cmd": "npx @yeutech/rollup-umd-ci-release-transitive verify"
-      },
       "@semantic-release/changelog",
       "@semantic-release/npm",
       "@semantic-release/git",
-      {
-        "path": "@semantic-release/gitlab",
-        "gitlabUrl": "https://module.kopaxgroup.com"
-      }
+      "@semantic-release/github"
     ],
     "prepare": [
-      {
-        "path": "@semantic-release/exec",
-        "cmd": "npx @yeutech/rollup-umd-ci-release-transitive prepare"
-      },
       "@semantic-release/changelog",
       "@semantic-release/npm",
       {
@@ -268,12 +248,49 @@
     "publish": [
       "@semantic-release/npm",
       {
-        "path": "@semantic-release/gitlab",
-        "gitlabUrl": "https://module.kopaxgroup.com"
-      },
-      {
-        "path": "@semantic-release/exec",
-        "cmd": "npx @yeutech/rollup-umd-ci-release-transitive publish ${nextRelease.version}"
+        "path": "@semantic-release/github",
+        "assets": [
+          {
+            "path": "package.json"
+          },
+          {
+            "path": "LICENSE.md"
+          },
+          {
+            "path": "CHANGELOG.md"
+          },
+          {
+            "path": "README.md"
+          },
+          {
+            "path": "dist/*.esm.js",
+            "label": "ES module"
+          },
+          {
+            "path": "dist/*.esm.js.map",
+            "label": "ES module source map"
+          },
+          {
+            "path": "dist/*.min.js",
+            "label": "UMD compressed"
+          },
+          {
+            "path": "dist/*.min.js.map",
+            "label": "UMD compressed source map"
+          },
+          {
+            "path": "dist/*.cjs.min.js",
+            "label": "CJS compressed"
+          },
+          {
+            "path": "dist/*.cjs.min.js.map",
+            "label": "CJS compressed source map"
+          },
+          {
+            "path": "lib/*.js",
+            "label": "CJS folder"
+          }
+        ]
       }
     ]
   },
@@ -282,22 +299,5 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "contributors": [],
-  "transitive": {
-    "name": "documentation-cli",
-    "scope": "rollup-umd",
-    "scopedName": "@rollup-umd/documentation-cli",
-    "homepage": "https://rollup-umd.github.io/documentation-cli",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/rollup-umd/documentation-cli.git"
-    },
-    "bugs": {
-      "url": "https://github.com/rollup-umd/documentation-cli/issues"
-    },
-    "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org"
-    }
-  }
+  "contributors": []
 }
