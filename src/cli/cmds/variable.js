@@ -2,6 +2,19 @@
 const async = require('async');
 const path = require('path');
 const glob = require('glob');
+const fs = require('fs');
+
+const sedReplace = (input, before, after, output, cb = () => {}) => {
+  const file = fs.readFileSync(input, 'utf8');
+  const re = new RegExp(escapeRegExp(before), 'gm');
+  const newFile = file.replace(re, after);
+  fs.writeFileSync(output, newFile, 'utf8');
+  cb();
+};
+
+function escapeRegExp(text) {
+  return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+}
 
 exports.command = 'variable <variable> [variables..]';
 exports.desc = 'Replace variable(s) in {{docs,src/components}/**/*.md,*.md} (eg: `SOMETHING=value`)';
