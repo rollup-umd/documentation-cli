@@ -1,3 +1,11 @@
+## [1.0.7](https://github.com/rollup-umd/documentation-cli/compare/v1.0.6...v1.0.7) (2018-11-14)
+
+
+### Bug Fixes
+
+* **intl:** fix sedReplace not imported ([329661a](https://github.com/rollup-umd/documentation-cli/commit/329661a))
+* **quality gate:** fix duplicate code ([c63f6a3](https://github.com/rollup-umd/documentation-cli/commit/c63f6a3))
+
 ## [1.0.6](https://github.com/rollup-umd/documentation-cli/compare/v1.0.5...v1.0.6) (2018-11-14)
 
 
