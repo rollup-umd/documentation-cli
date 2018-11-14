@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/rollup-umd/documentation-cli/compare/v1.0.3...v1.0.4) (2018-11-14)
+
+
+### Bug Fixes
+
+* **variable:** repair variable command missing function sedReplace ([fab2654](https://github.com/rollup-umd/documentation-cli/commit/fab2654))
+
 ## [1.0.3](https://github.com/rollup-umd/documentation-cli/compare/v1.0.2...v1.0.3) (2018-11-14)
 
 
