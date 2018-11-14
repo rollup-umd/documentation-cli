@@ -2,14 +2,8 @@
 const async = require('async');
 const path = require('path');
 const fs = require('fs');
+const { spawn: spawnDefault } = require('child_process');
 
-const { spawn: spawnDefault, exec: execDefault } = require('child_process');
-
-const exec = (command, cb) => {
-  execDefault(command, {
-    maxBuffer: 1024 * 1024,
-  }, cb);
-};
 const spawn = (command, cb) => {
   const split = command.split(' ');
   const program = split[0];
