@@ -281,22 +281,5 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "contributors": [],
-  "transitive": {
-    "name": "documentation-cli",
-    "scope": "rollup-umd",
-    "scopedName": "@rollup-umd/documentation-cli",
-    "homepage": "https://rollup-umd.github.io/documentation-cli",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/rollup-umd/documentation-cli.git"
-    },
-    "bugs": {
-      "url": "https://github.com/rollup-umd/documentation-cli/issues"
-    },
-    "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org"
-    }
-  }
+  "contributors": []
 }
