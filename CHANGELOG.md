@@ -1,3 +1,11 @@
+## [1.0.8](https://github.com/rollup-umd/documentation-cli/compare/v1.0.7...v1.0.8) (2018-11-14)
+
+
+### Bug Fixes
+
+* **intl:** fix intl command ([3aba7ad](https://github.com/rollup-umd/documentation-cli/commit/3aba7ad))
+* **readme:** fix sonarcloud links ([8bd154b](https://github.com/rollup-umd/documentation-cli/commit/8bd154b))
+
 ## [1.0.7](https://github.com/rollup-umd/documentation-cli/compare/v1.0.6...v1.0.7) (2018-11-14)
 
 
