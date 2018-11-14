@@ -2,25 +2,7 @@
 const path = require('path');
 const fs = require('fs');
 const async = require('async');
-const { spawn: spawnDefault, exec: execDefault } = require('child_process');
-
-const exec = (command, cb) => {
-  execDefault(command, {
-    maxBuffer: 1024 * 1024,
-  }, cb);
-};
-const spawn = (command, cb) => {
-  const split = command.split(' ');
-  const program = split[0];
-  const args = split.slice(1);
-  const child = spawnDefault(program, args || []);
-  const outputList = [];
-  child.stdout.setEncoding('utf8');
-  child.stderr.setEncoding('utf8');
-  child.stdout.on('data', (data) => outputList.push(data) && console.log(data.replace(/\n$/, '')));
-  child.stderr.on('data', (data) => outputList.push(data) && console.log(data.replace(/\n$/, '')));
-  child.on('close', (code) => code === 1 ? cb(new Error(`child process exited with code ${code}`, [outputList.join('')])) : cb(null, [outputList.join('')]));
-};
+const { spawn, exec } = require('../utils');
 
 const emptyLink = (pkg, lang, isPrivate) => isPrivate ? `*empty* ([edit now](${pkg.bugs.url.split('/issues')[0]}/edit/dev/translate/${lang}.json))` : `*empty*`;
 require('shelljs/global');
