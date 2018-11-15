@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/rollup-umd/documentation-cli/compare/v1.0.8...v1.0.9) (2018-11-15)
+
+
+### Bug Fixes
+
+* **intl:** auto configuring styleguide/prepare.sh for intl extraction to documentation and ix bug dependencies to .gitlab-ci.yml ([a63ae6a](https://github.com/rollup-umd/documentation-cli/commit/a63ae6a))
+
 ## [1.0.8](https://github.com/rollup-umd/documentation-cli/compare/v1.0.7...v1.0.8) (2018-11-14)
 
 
