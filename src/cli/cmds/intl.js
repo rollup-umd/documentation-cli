@@ -31,7 +31,7 @@ exports.handler = (argv) => {
     console.log('[Error] - You must use the react-intl package to use this command!');
     return;
   }
-  const gitlabCiPath = path.join(argv.path, '.gitlab-ci.yml');
+  const preparePath = path.join(argv.path, 'styleguide/prepare.sh');
   const configPath = path.join(argv.path, 'styleguide/styleguide.ext.json');
   const config = require(configPath);
 
@@ -50,13 +50,19 @@ import englishMessages from '$PACKAGE_NAME/translate/en.json';
   async.auto({
     runExtract: (cb) => spawn(`npx @rollup-umd/intl extract`, cb),
     isPrivate: (cb) => spawn(`npx rollup-umd-scripts publish status | tail -1`, cb),
-    setupCi: (cb) => exec(`grep -q "npx @rollup-umd/documentation-cli intl" ${gitlabCiPath} || echo true`, (err, res) => {
-      if (res && res.indexOf('true') !== -1) {
-        sedReplace(gitlabCiPath, `# !Replace variables`, `# !Replace variables\n    - npx @rollup-umd/documentation-cli intl`, gitlabCiPath, cb);
+    setupCi: (cb) => {
+      if (!fs.existsSync(configPath)) {
+        cb();
         return;
       }
-      cb();
-    }),
+      exec(`grep -q "npx @rollup-umd/documentation-cli intl" ${preparePath} || echo true`, (err, res) => {
+        if (res && res.indexOf('true') !== -1) {
+          exec(`echo npx @rollup-umd/documentation-cli intl >> ${preparePath}`, cb);
+          return;
+        }
+        cb();
+      })
+    },
     makeDoc: ['runExtract', 'isPrivate', 'setupCi', (res, cb) => {
       const isPrivate = !((res.isPrivate[0].split('tail')[1] || res.isPrivate).indexOf('private') === -1); // ugly but support both internal cli and external cli
       pkg.translation.locales.forEach((locale) => {
