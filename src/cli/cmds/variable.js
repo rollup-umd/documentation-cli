@@ -16,9 +16,14 @@ exports.builder = (yargs) => yargs
     describe: 'path',
     default: process.cwd(),
   })
+  .option('pattern', {
+    alias: 'r',
+    describe: 'Replace pattern',
+    default: '{{docs,src/components}/**/*.md,**/*.md}',
+  })
   .option('only-doc', {
     alias: 'd',
-    describe: 'Replace variable(s) only in {docs,src/components}/**/*.md',
+    describe: 'Replace variable(s) only in {docs,src/{**,components}}/*.md',
     default: false,
   });
 exports.handler = (argv) => {
@@ -29,7 +34,7 @@ exports.handler = (argv) => {
       argv.path = argv.path[1] === '/' ? path.join(process.cwd(), argv.path.slice(2)) : path.join(process.cwd(), argv.path);
       break;
   }
-  const pattern = path.join(argv.path, argv['only-doc'] ? '{docs,src/components}/**/*.md' : '{{docs,src/components}/**/*.md,*.md}');
+  const pattern = path.join(argv.path, argv['only-doc'] ? '{docs,src/{**,components}}/*.md' : argv.pattern);
   const options = {
     nonull: false,
   };
