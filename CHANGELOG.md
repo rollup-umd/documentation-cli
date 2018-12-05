@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/rollup-umd/documentation-cli/compare/v1.0.10...v1.0.11) (2018-12-05)
+
+
+### Bug Fixes
+
+* **ribbon:** fix ribbon getting wrong url ([1f40ef8](https://github.com/rollup-umd/documentation-cli/commit/1f40ef8))
+
 ## [1.0.10](https://github.com/rollup-umd/documentation-cli/compare/v1.0.9...v1.0.10) (2018-11-23)
 
 
