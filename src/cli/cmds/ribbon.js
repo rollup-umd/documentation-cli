@@ -1,5 +1,4 @@
 /* eslint-disable no-undef, no-param-reassign, global-require, no-unused-vars, no-console, no-underscore-dangle, prefer-destructuring */
-const execa = require('execa');
 const path = require('path');
 const fs = require('fs');
 
@@ -25,10 +24,8 @@ exports.handler = async (argv) => {
 
   const repoName = url.indexOf('github.com') !== -1 ? 'GitHub' : 'GitLab';
 
-  const { stdout: repoUrl } = await execa.shell(`node ${argv.$0} meta http-url -p ${argv.path}`);
-
   const ribbon = {
-    url: repoUrl,
+    url: url.replace(/\.git$/, ''),
     text: `Fork us on ${repoName}`,
   };
 
