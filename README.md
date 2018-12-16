@@ -1,9 +1,17 @@
 # documentation-cli
 
-[![Build Status](https://travis-ci.org/rollup-umd/documentation-cli.svg?branch=master)](https://travis-ci.org/rollup-umd/documentation-cli) [![npm Version](https://img.shields.io/npm/v/@rollup-umd/documentation-cli.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli) [![License](https://img.shields.io/npm/l/@rollup-umd/documentation-cli.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli) [![NPM monthly downloads](https://img.shields.io/npm/dm/@rollup-umd/documentation-cli.svg?style=flat)](https://npmjs.org/package/@rollup-umd/documentation-cli) [![NPM total downloads](https://img.shields.io/npm/dt/@rollup-umd/documentation-cli.svg?style=flat)](https://npmjs.org/package/@rollup-umd/documentation-cli) [![npm Version](https://img.shields.io/node/v/@rollup-umd/documentation-cli.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli) [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.documentation-cli&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.rollup-umd.documentation-cli) [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.documentation-cli&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.rollup-umd.documentation-cli) [![Greenkeeper badge](https://badges.greenkeeper.io/rollup-umd/documentation-cli.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/rollup-umd/documentation-cli.svg?branch=master)](https://travis-ci.org/rollup-umd/documentation-cli) 
+[![npm Version](https://img.shields.io/npm/v/@rollup-umd/documentation-cli.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli) 
+[![License](https://img.shields.io/npm/l/@rollup-umd/documentation-cli.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli) 
+[![NPM monthly downloads](https://img.shields.io/npm/dm/@rollup-umd/documentation-cli.svg?style=flat)](https://npmjs.org/package/@rollup-umd/documentation-cli) 
+[![NPM total downloads](https://img.shields.io/npm/dt/@rollup-umd/documentation-cli.svg?style=flat)](https://npmjs.org/package/@rollup-umd/documentation-cli) 
+[![npm Version](https://img.shields.io/node/v/@rollup-umd/documentation-cli.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli) 
+[![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.documentation-cli&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.rollup-umd.documentation-cli) 
+[![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.documentation-cli&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.rollup-umd.documentation-cli) 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rollup-umd/documentation-cli.svg)](https://greenkeeper.io/)
 
-the adaptive module boilerplate
+CLI utilities for maintaining the documentation of any Rollup UMD projects.
 
 
 ## Table of Contents

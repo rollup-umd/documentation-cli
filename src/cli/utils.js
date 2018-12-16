@@ -14,8 +14,8 @@ const spawn = (command, cb) => {
   const outputList = [];
   child.stdout.setEncoding('utf8');
   child.stderr.setEncoding('utf8');
-  child.stdout.on('data', (data) => outputList.push(data) && console.log(data.replace(/\n$/, '')));
-  child.stderr.on('data', (data) => outputList.push(data) && console.log(data.replace(/\n$/, '')));
+  child.stdout.on('data', (data) => outputList.push(data) && console.log(data.replace(/\n$/, ''))); // eslint-disable-line no-console
+  child.stderr.on('data', (data) => outputList.push(data) && console.log(data.replace(/\n$/, ''))); // eslint-disable-line no-console
   child.on('close', (code) => code === 1 ? cb(new Error(`child process exited with code ${code}`, [outputList.join('')])) : cb(null, [outputList.join('')]));
 };
 
