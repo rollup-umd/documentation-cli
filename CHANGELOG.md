@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/rollup-umd/documentation-cli/compare/v1.0.11...v1.1.0) (2018-12-16)
+
+
+### Features
+
+* **greenkeeper:** added greenkeeper" ([a5fae00](https://github.com/rollup-umd/documentation-cli/commit/a5fae00))
+
 ## [1.0.11](https://github.com/rollup-umd/documentation-cli/compare/v1.0.10...v1.0.11) (2018-12-05)
 
 
