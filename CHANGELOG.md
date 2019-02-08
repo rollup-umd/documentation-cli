@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/rollup-umd/documentation-cli/compare/v1.1.1...v1.1.2) (2019-02-08)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([e3ec0c3](https://github.com/rollup-umd/documentation-cli/commit/e3ec0c3))
+
 ## [1.1.1](https://github.com/rollup-umd/documentation-cli/compare/v1.1.0...v1.1.1) (2018-12-16)
 
 
