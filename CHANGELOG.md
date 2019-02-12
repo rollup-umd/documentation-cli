@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/rollup-umd/documentation-cli/compare/v1.1.2...v1.1.3) (2019-02-12)
+
+
+### Bug Fixes
+
+* **package:** update yargs to version 13.1.0 ([840ac03](https://github.com/rollup-umd/documentation-cli/commit/840ac03))
+
 ## [1.1.2](https://github.com/rollup-umd/documentation-cli/compare/v1.1.1...v1.1.2) (2019-02-08)
 
 
