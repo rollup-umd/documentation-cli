@@ -198,7 +198,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "cz-conventional-changelog": "^2.1.0",
     "es6-promise": "^4.2.5",
-    "eslint": "^5.13.0",
+    "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "exports-loader": "^0.7.0",
