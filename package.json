@@ -203,7 +203,7 @@
     "eslint-plugin-import": "^2.16.0",
     "exports-loader": "^0.7.0",
     "istanbul-api": "^2.1.0",
-    "istanbul-reports": "^2.1.0",
+    "istanbul-reports": "^3.0.0",
     "jest-cli": "^24.1.0",
     "jest-sonar-reporter": "^2.0.0",
     "lint-staged": "^8.1.3",
