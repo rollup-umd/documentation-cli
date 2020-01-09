@@ -210,7 +210,7 @@
     "pre-commit": "^1.2.2",
     "react-styleguidist": "^8.0.6",
     "rimraf": "^2.6.3",
-    "semantic-release": "^15.13.3",
+    "semantic-release": "^16.0.0",
     "toctoc": "^0.3.2",
     "webpack": "^4.29.3"
   },
