@@ -9,7 +9,7 @@
 [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/documentation-cli)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.documentation-cli&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.rollup-umd.documentation-cli) 
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.documentation-cli&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.rollup-umd.documentation-cli) 
-[![Greenkeeper badge](https://badges.greenkeeper.io/rollup-umd/documentation-cli.svg)](https://greenkeeper.io/)
+
 
 CLI utilities for maintaining the documentation of any Rollup UMD projects.
 
